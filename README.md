@@ -1,2 +1,1 @@
-# To-Do-List-Project
-This project done by CSS &amp; JS only .
+# This Repo Contains Files of Template six .
