@@ -1,7 +1,6 @@
 // Show Setting Box 
 let setting = document.querySelector(".settings-box")
 
-// let iconContainer = document.querySelector(".settings-box .toggle-settings")
 document.querySelector(".settings-box .fa-gear").onclick = function () {
     // Add Fa-Spin Class Name To Icon
     this.classList.toggle("fa-spin")
@@ -15,10 +14,17 @@ document.querySelector(".settings-box .fa-gear").onclick = function () {
 const landingPage = document.querySelector('.landing-page');
 
 // Get Array Of Images
-let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
+let imgsArray = [
+    "Landing01.jpg",
+    "Landing02.jpg",
+    "Landing03.jpg",
+    "Landing04.jpg", 
+    "Landing05.jpg", 
+    "Landing06.jpg"
+];
 
 // Change Background Image URL
-landingPage.style.backgroundImage = 'url("imgs/03.jpg")';
+landingPage.style.backgroundImage = 'url("imgs/Landing03.jpg")';
 
 setInterval(() => {
     // Get Random Number

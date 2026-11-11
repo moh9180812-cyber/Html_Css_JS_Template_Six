@@ -2,7 +2,7 @@ html {
     behavior: smooth;
 }
 :root {
-    --main-color: #ff9800;
+    --main-color: #03a9f4;
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -37,7 +37,7 @@ body {
 /* Start Landing Page */
 .landing-page {
     min-height: 100vh;
-    background-image: url("../imgs/01.jpg");
+    background-image: url("../imgs/Landing01.jpg");
     background-size: cover;
     position: relative;
     transition: 0.3s;
@@ -74,6 +74,21 @@ body {
 .header-area .links li {
     display: inline-block;
     margin-left: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.header-area .links li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+.header-area .links li:hover::before {
+    width: 100%;
 }
 .header-area .links li a {
     text-decoration: none;
@@ -83,9 +98,7 @@ body {
 .header-area .links li a:hover,
 .header-area .links li a.active {
     color: var(--main-color);
-
 }
-
 .introduction-text {
     position: absolute;
     top: 50%;
